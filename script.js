@@ -10,3 +10,17 @@ thumbnails.forEach(thumb => {
         main_img.src= this.src
     })
 })
+
+// Función para abrir un video de YouTube en una nueva ventana
+function abrirVideo(videoUrl) {
+    window.open(videoUrl, '_blank');
+}
+
+// Asignar la función a cada botón
+document.getElementById('openVideoBtn1').addEventListener('click', function() {
+    abrirVideo('https://youtu.be/ixZ_3A5jzk0?si=m6tmCwWNB4Uejbyk');
+});
+
+document.getElementById('openVideoBtn2').addEventListener('click', function() {
+    abrirVideo('https://open.spotify.com/playlist/0Sa5u2RlcQISQYyzUn74QV?si=7f2db92441bb412a');
+});
