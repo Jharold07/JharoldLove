@@ -3,11 +3,11 @@ const thumbnails = document.querySelectorAll('.thumbnail')
 
 
 thumbnails.forEach(thumb => {
-    thumb.addEventListener('click', function(){
+    thumb.addEventListener('click', function () {
         const active = document.querySelector('.active')
         active.classList.remove('active')
         this.classList.add('active')
-        main_img.src= this.src
+        main_img.src = this.src
     })
 })
 
@@ -17,10 +17,10 @@ function abrirVideo(videoUrl) {
 }
 
 // Asignar la función a cada botón
-document.getElementById('openVideoBtn1').addEventListener('click', function() {
+document.getElementById('openVideoBtn1').addEventListener('click', function () {
     abrirVideo('https://youtu.be/ixZ_3A5jzk0?si=m6tmCwWNB4Uejbyk');
 });
 
-document.getElementById('openVideoBtn2').addEventListener('click', function() {
+document.getElementById('openVideoBtn2').addEventListener('click', function () {
     abrirVideo('https://open.spotify.com/playlist/0Sa5u2RlcQISQYyzUn74QV?si=7f2db92441bb412a');
 });
